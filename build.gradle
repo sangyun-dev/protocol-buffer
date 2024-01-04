@@ -25,12 +25,11 @@ dependencies {
     annotationProcessor('org.projectlombok:lombok')
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'io.grpc:grpc-netty:1.41.0'
-    implementation 'io.grpc:grpc-protobuf:1.41.0'
-    implementation 'io.grpc:grpc-stub:1.41.0'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
     // Protocol Buffers 메시지 클래스 생성을 위한 의존성
-    implementation 'com.google.protobuf:protobuf-java:3.21.7'
+    implementation 'com.google.protobuf:protobuf-java:3.25.1'
+
 }
 
 test {
